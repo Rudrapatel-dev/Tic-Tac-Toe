@@ -4,84 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-            background-color: var(--bg-color);
-            transition: background-color 0.5s;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+            backdrop-filter: blur(10px);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
         }
         .container {
-            text-align: center;
-            border: 2px solid #333;
-            border-radius: 10px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .grid {
             display: grid;
             grid-template-columns: repeat(3, 100px);
-            gap: 10px;
-            margin: 20px auto;
+            grid-gap: 10px;
         }
         .cell {
             width: 100px;
             height: 100px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            font-size: 2em;
-            cursor: pointer;
-            background-color: #f0f0f0;
-            transition: background-color 0.3s;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            transition: all 0.3s ease;
         }
         .cell:hover {
-            background-color: #e0e0e0;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
         }
-        .score {
-            font-size: 1.5em;
-            margin: 20px;
-        }
-        button {
-            background-color: #007BFF;
+        h1 {
             color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <div class="score">
-            <span>Player X: <span id="playerXScore">0</span></span> | 
-            <span>Player O: <span id="playerOScore">0</span></span>
-        </div>
-        <div class="grid">
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-        </div>
-        <button id="restartButton">Restart Game</button>
-        <button id="themeSwitch">Switch Theme</button>
+        <div class="cell" id="cell-0"></div>
+        <div class="cell" id="cell-1"></div>
+        <div class="cell" id="cell-2"></div>
+        <div class="cell" id="cell-3"></div>
+        <div class="cell" id="cell-4"></div>
+        <div class="cell" id="cell-5"></div>
+        <div class="cell" id="cell-6"></div>
+        <div class="cell" id="cell-7"></div>
+        <div class="cell" id="cell-8"></div>
     </div>
-    <script src="script.js"></script>
+    <h1>Tic Tac Toe</h1>
+    <script>
+        // Add your game logic here
+    </script>
 </body>
 </html>
